@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+
+textarea {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+textarea:focus {
+  outline: none !important;
+  border: none;
+}
+
+main {
+  padding: 5rem 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.card-sandbox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: lightblue;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+}
+
+.card-sandbox-text {
+  font-family: Gloria Hallelujah, cursive;
+  text-align: center;
+  width: 350px;
+  height: 240px;
+  font-size: 30px;
+}
+
+.card-sandbox-textarea {
+  font-family: Gloria Hallelujah, cursive;
+  border: none;
+  resize: none;
+  background-color: transparent;
+  width: 350px;
+  height: 240px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.card-sandbox-footer-logo {
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (max-width: 1024px) {
+  /* CSS */
+  .card-sandbox {
+    width: 245px;
+    height: 245px;
+  }
+
+  .card-sandbox-text {
+    font-family: Gloria Hallelujah, cursive;
+    text-align: center;
+    width: 200px;
+    height: 120px;
+    font-size: 14px;
+  }
+
+  .card-sandbox-textarea {
+    font-family: Gloria Hallelujah, cursive;
+    border: none;
+    resize: none;
+    background-color: transparent;
+    width: 200px;
+    height: 120px;
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .card-sandbox-footer-logo {
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 12px;
+  }
+}
